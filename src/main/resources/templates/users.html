@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+  <div style=" display: flex; justify-content: center; text-align: center">
+      <table>
+        <tr>
+          <th>usernames</th>
+        </tr>
+        <tr th:each="user : ${users}">
+          <td th:text="${user.username}"></td>
+        </tr>
+      </table>
+  </div>
+</body>
+</html>
